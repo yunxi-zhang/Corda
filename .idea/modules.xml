@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.iml" filepath="$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.iml" filepath="$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.main.iml" filepath="$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.test.iml" filepath="$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.test.iml" />
+    </modules>
+  </component>
+</project>
