@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "939f18e9-de70-4ab3-a8a4-6ef381642566",
+		"name": "corda-spring-webserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:10103/pay",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sellerBalance\": 100,\n\t\"buyerBalance\": 100,\n\t\"payment\": 25,\n\t\"seller\": \"Seller\",\n\t\"buyer\": \"BrokerS\"\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:10103/pay",
+					"host": [
+						"localhost"
+					],
+					"port": "10103",
+					"path": [
+						"pay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
