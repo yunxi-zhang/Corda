@@ -1,12 +1,12 @@
 
 [91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         [94mCheck your contracts carefully. The fine print
-[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mis usually a clause for suspicion 
+ / /     __  / ___/ __  / __ `/         [94mI met my bank manager yesterday and asked
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mto check my balance ... he pushed me over!
 [91m\____/     /_/   \__,_/\__,_/[m
 
 [99;1m--- Corda Open Source 3.3-corda (c834162) -----------------------------------------------
 
 [m
-Logs can be found in                    : /Users/yunxi.zhang/projects/corda-spring-webserver/build/nodes/Notary/logs
-Database connection url is              : jdbc:h2:tcp://172.22.166.82:49685/node
+Logs can be found in                    : /Users/yunxi.zhang/projects/Corda-spring-webserver/build/nodes/Notary/logs
+Database connection url is              : jdbc:h2:tcp://192.168.8.115:59002/node

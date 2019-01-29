@@ -38,6 +38,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="net.corda.server.Corda-spring-webserver.main" />
     <orderEntry type="module" module-name="net.corda.server.cordapp.main" />
+    <orderEntry type="module" module-name="net.corda.server.cordapp-contracts-states.main" />
     <orderEntry type="library" name="Gradle: net.corda:corda-node-driver:3.3-corda" level="project" />
     <orderEntry type="library" name="Gradle: net.corda:corda-test-utils:3.3-corda" level="project" />
     <orderEntry type="library" name="Gradle: net.corda:corda-node:3.3-corda" level="project" />

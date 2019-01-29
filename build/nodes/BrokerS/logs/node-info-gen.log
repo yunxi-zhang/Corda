@@ -1,12 +1,12 @@
 
 [91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         [94mOld bankers never die, they
-[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mjust... pass the buck
+ / /     __  / ___/ __  / __ `/         [94mThere are two rules for financial success:
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94m1) Don't tell everything you know.
 [91m\____/     /_/   \__,_/\__,_/[m
 
 [99;1m--- Corda Open Source 3.3-corda (c834162) -----------------------------------------------
 
 [m
-Logs can be found in                    : /Users/yunxi.zhang/projects/corda-spring-webserver/build/nodes/BrokerS/logs
-Database connection url is              : jdbc:h2:tcp://172.22.166.82:49692/node
+Logs can be found in                    : /Users/yunxi.zhang/projects/Corda-spring-webserver/build/nodes/BrokerS/logs
+Database connection url is              : jdbc:h2:tcp://192.168.8.115:59001/node

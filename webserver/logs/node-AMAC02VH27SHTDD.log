@@ -1,13 +1,20 @@
-[INFO ] 2019-01-28T16:13:50,424Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 68033 (/Users/yunxi.zhang/projects/spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/spring-webserver/webserver) {}
-[INFO ] 2019-01-28T16:13:51,105Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
-[INFO ] 2019-01-28T16:13:56,913Z [main] internal.RPCClient.logElapsedTime - Startup took 1229 msec {}
-[INFO ] 2019-01-28T16:14:40,007Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 68037 (/Users/yunxi.zhang/projects/spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/spring-webserver/webserver) {}
-[INFO ] 2019-01-28T16:14:41,015Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
-[INFO ] 2019-01-28T16:14:50,751Z [main] internal.RPCClient.logElapsedTime - Startup took 2192 msec {}
-[INFO ] 2019-01-28T16:14:52,026Z [main] server.ServerKt.logStarted - Started ServerKt in 13.374 seconds (JVM running for 16.635) {}
-[WARN ] 2019-01-28T16:17:52,766Z [Thread-2 (ActiveMQ-client-global-threads)] internal.RPCClientProxyHandler.cleanUpOnConnectionLoss - Terminating observables. {}
-[INFO ] 2019-01-28T16:19:21,747Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 68355 (/Users/yunxi.zhang/projects/spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/spring-webserver/webserver) {}
-[INFO ] 2019-01-28T16:19:22,462Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
-[INFO ] 2019-01-28T16:19:29,994Z [main] internal.RPCClient.logElapsedTime - Startup took 2484 msec {}
-[INFO ] 2019-01-28T16:19:31,317Z [main] server.ServerKt.logStarted - Started ServerKt in 10.608 seconds (JVM running for 13.578) {}
-[WARN ] 2019-01-28T16:23:26,381Z [Thread-1 (ActiveMQ-client-global-threads)] internal.RPCClientProxyHandler.cleanUpOnConnectionLoss - Terminating observables. {}
+[INFO ] 2019-01-29T09:51:21,022Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 83015 (/Users/yunxi.zhang/projects/Corda-spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/Corda-spring-webserver/webserver) {}
+[INFO ] 2019-01-29T09:51:21,560Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
+[INFO ] 2019-01-29T09:51:28,412Z [main] internal.RPCClient.logElapsedTime - Startup took 2384 msec {}
+[INFO ] 2019-01-29T09:51:29,611Z [main] server.ServerKt.logStarted - Started ServerKt in 9.411 seconds (JVM running for 11.826) {}
+[INFO ] 2019-01-29T09:55:39,954Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 83192 (/Users/yunxi.zhang/projects/Corda-spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/Corda-spring-webserver/webserver) {}
+[INFO ] 2019-01-29T09:55:40,456Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
+[INFO ] 2019-01-29T09:55:49,912Z [main] internal.RPCClient.logElapsedTime - Startup took 4086 msec {}
+[INFO ] 2019-01-29T09:55:51,847Z [main] server.ServerKt.logStarted - Started ServerKt in 12.664 seconds (JVM running for 14.896) {}
+[INFO ] 2019-01-29T09:58:03,701Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 83245 (/Users/yunxi.zhang/projects/Corda-spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/Corda-spring-webserver/webserver) {}
+[INFO ] 2019-01-29T09:58:04,371Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
+[INFO ] 2019-01-29T09:58:10,668Z [main] internal.RPCClient.logElapsedTime - Startup took 1751 msec {}
+[INFO ] 2019-01-29T09:58:11,920Z [main] server.ServerKt.logStarted - Started ServerKt in 9.178 seconds (JVM running for 13.034) {}
+[INFO ] 2019-01-29T10:10:23,540Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 85144 (/Users/yunxi.zhang/projects/Corda-spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/Corda-spring-webserver/webserver) {}
+[INFO ] 2019-01-29T10:10:24,087Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
+[INFO ] 2019-01-29T10:10:30,748Z [main] internal.RPCClient.logElapsedTime - Startup took 2160 msec {}
+[INFO ] 2019-01-29T10:10:31,821Z [main] server.ServerKt.logStarted - Started ServerKt in 9.147 seconds (JVM running for 11.573) {}
+[INFO ] 2019-01-29T10:16:21,563Z [main] server.ServerKt.logStarting - Starting ServerKt on AMAC02VH27SHTDD with PID 86774 (/Users/yunxi.zhang/projects/Corda-spring-webserver/webserver/build/classes/kotlin/main started by yunxi.zhang in /Users/yunxi.zhang/projects/Corda-spring-webserver/webserver) {}
+[INFO ] 2019-01-29T10:16:22,182Z [main] server.ServerKt.logStartupProfileInfo - No active profile set, falling back to default profiles: default {}
+[INFO ] 2019-01-29T10:16:29,318Z [main] internal.RPCClient.logElapsedTime - Startup took 2496 msec {}
+[INFO ] 2019-01-29T10:16:30,393Z [main] server.ServerKt.logStarted - Started ServerKt in 9.735 seconds (JVM running for 13.377) {}

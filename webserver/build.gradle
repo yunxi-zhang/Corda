@@ -55,6 +55,7 @@ dependencies {
     }
 
     cordapp project(":cordapp")
+    cordapp project(":cordapp-contracts-states")
 
 }
 
@@ -67,7 +68,7 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
     }
 }
 
-task runPartyAServer(type: JavaExec) {
+task runSellerServer(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'net.corda.server.ServerKt'
     environment "config.rpc.username", "user1"

@@ -1,3 +1,4 @@
 include 'cordapp'
 include 'webserver'
+include 'cordapp-contracts-states'
 

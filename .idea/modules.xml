@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.corda.server.Corda-spring-webserver.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.corda.server.cordapp-contracts-states.iml" filepath="$PROJECT_DIR$/.idea/modules/net.corda.server.cordapp-contracts-states.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp-contracts-states/net.corda.server.cordapp-contracts-states.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp-contracts-states/net.corda.server.cordapp-contracts-states.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp-contracts-states/net.corda.server.cordapp-contracts-states.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp-contracts-states/net.corda.server.cordapp-contracts-states.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cordapp/net.corda.server.cordapp.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.iml" filepath="$PROJECT_DIR$/.idea/modules/webserver/net.corda.server.webserver.iml" />
