@@ -49,7 +49,7 @@ dependencies {
     cordaCompile "$corda_release_group:corda-test-utils:$corda_release_version"
     testCompile "$corda_release_group:corda-node-driver:$corda_release_version"
 
-    cordapp project(":cordapp")
+    cordapp project(":cordapp-seller")
     cordapp project(":cordapp-contracts-states")
 }
 
@@ -73,7 +73,7 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
             adminAddress("localhost:10043")
         }
         cordapps = [
-                "$project.group:cordapp:$project.version",
+                "$project.group:cordapp-seller:$project.version",
                 "$project.group:cordapp-contracts-states:$project.version"
         ]
     }
@@ -86,7 +86,7 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         }
         rpcUsers = [[ user: "user1", "password": "test", "permissions": ["ALL"]]]
         cordapps = [
-                "$project.group:cordapp:$project.version",
+                "$project.group:cordapp-seller:$project.version",
                 "$project.group:cordapp-contracts-states:$project.version"
         ]
     }
@@ -99,7 +99,7 @@ task deployNodes(type: net.corda.plugins.Cordform, dependsOn: ['jar']) {
         }
         rpcUsers = [[ user: "user1", "password": "test", "permissions": ["ALL"]]]
         cordapps = [
-                "$project.group:cordapp:$project.version",
+                "$project.group:cordapp-seller:$project.version",
                 "$project.group:cordapp-contracts-states:$project.version"
         ]
     }

@@ -54,7 +54,7 @@ dependencies {
         exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
     }
 
-    cordapp project(":cordapp")
+    cordapp project(":cordapp-seller")
     cordapp project(":cordapp-contracts-states")
 
 }
