@@ -11,7 +11,6 @@ buildscript {
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version")
     }
 }
 
@@ -28,14 +27,10 @@ apply plugin: 'net.corda.plugins.cordapp'
 apply plugin: 'org.springframework.boot'
 
 dependencies {
-
-    cordaCompile "$corda_release_group:corda-test-utils:$corda_release_version"
-    testCompile "$corda_release_group:corda-node-driver:$corda_release_version"
-
     compile("org.springframework.boot:spring-boot-starter-websocket:$spring_boot_version")
-    compile project(":webapp-common")
-    cordapp project(":cordapp-seller")
-    cordapp project(":cordapp-contracts-states")
+    compile "net.corda:corda-jackson:$corda_release_version"
+    compile "$corda_release_group:corda-rpc:$corda_release_version"
+
 }
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
@@ -44,23 +39,5 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         apiVersion = "1.1"
         jvmTarget = "1.8"
         javaParameters = true   // Useful for reflection.
-    }
-}
-
-task runSellerServer(type: JavaExec) {
-    classpath = sourceSets.main.runtimeClasspath
-    main = 'net.corda.server.ServerKt'
-    environment "config.rpc.username", "user1"
-    environment "config.rpc.password", "test"
-    environment "config.rpc.host", "localhost"
-    environment "config.rpc.port", "10006"
-    environment "server.port", "10106"
-}
-
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'net.corda.server.ServerKt'
-        )
     }
 }
