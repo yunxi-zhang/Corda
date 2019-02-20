@@ -29,7 +29,7 @@ dependencies {
     compile project(":webapp-common")
     compile project(":cordapp-common")
     compile project(":cordapp-contracts-states")
-    compile project(":cordapp-seller")
+    compile project(":cordapp-buyer")
 }
 
 configurations {
