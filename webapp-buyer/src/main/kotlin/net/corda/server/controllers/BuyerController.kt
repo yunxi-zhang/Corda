@@ -1,6 +1,5 @@
 package net.corda.server.controllers
 
-import com.yunxi.flows.PayFlow1
 import com.yunxi.states.Transaction
 import net.corda.core.identity.CordaX500Name
 import net.corda.core.utilities.getOrThrow
