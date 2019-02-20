@@ -39,7 +39,7 @@ class SellerController(
                             ?: throw IllegalArgumentException("Unknown party name.")
             )
             val result = proxy.startFlowDynamic(PayFlow1::class.java, tx).returnValue.getOrThrow()
-            return ResponseEntity.ok(mapper.writeValueAsString(result))
+            return ResponseEntity.ok(mapper.writeValueAsString(result.coreTransaction.outputs))
         } catch (e: Exception) {
             return ResponseEntity.badRequest().body("error:$e")
         }
