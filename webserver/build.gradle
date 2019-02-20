@@ -32,6 +32,11 @@ dependencies {
     compile project(":cordapp-seller")
 }
 
+configurations {
+    //remove default logger
+    all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+}
+
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
     kotlinOptions {
         apiVersion = "1.3"
