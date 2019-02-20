@@ -20,6 +20,6 @@ class CustomController(
 
     private val proxy = rpc.proxy
 
-    @GetMapping(value = "/customendpoint", produces = arrayOf("text/plain"))
+    @GetMapping("/customendpoint", produces = arrayOf("text/plain"))
     private fun status() = "Modify this."
 }

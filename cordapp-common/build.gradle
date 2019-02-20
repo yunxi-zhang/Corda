@@ -7,6 +7,7 @@ repositories {
 
 apply plugin: 'kotlin'
 apply plugin: 'net.corda.plugins.cordapp'
+apply from:   '../commons.gradle'
 
 dependencies {
     cordapp project(':cordapp-contracts-states')
@@ -14,8 +15,7 @@ dependencies {
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
     kotlinOptions {
-        languageVersion = "1.2"
-        apiVersion = "1.2"
+        apiVersion = "1.3"
         jvmTarget = "1.8"
         javaParameters = true   // Useful for reflection.
     }

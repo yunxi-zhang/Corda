@@ -27,30 +27,30 @@ class StandardController(
     private val proxy = rpc.proxy
     private val mapper = JacksonSupport.createDefaultMapper(rpc.proxy)
 
-    @GetMapping(value = "/status", produces = arrayOf("text/plain"))
+    @GetMapping("/status", produces = arrayOf("text/plain"))
     private fun status() = "200"
 
-    @GetMapping(value = "/servertime", produces = arrayOf("text/plain"))
+    @GetMapping("/servertime", produces = arrayOf("text/plain"))
     private fun serverTime() = LocalDateTime.ofInstant(proxy.currentNodeTime(), ZoneId.of("UTC")).toString()
 
-    @GetMapping(value = "/addresses", produces = arrayOf("text/plain"))
+    @GetMapping("/addresses", produces = arrayOf("text/plain"))
     private fun addresses() = proxy.nodeInfo().addresses.toString()
 
-    @GetMapping(value = "/identities", produces = arrayOf("text/plain"))
+    @GetMapping("/identities", produces = arrayOf("text/plain"))
     private fun identities() = proxy.nodeInfo().legalIdentities.toString()
 
-    @GetMapping(value = "/platformversion", produces = arrayOf("text/plain"))
+    @GetMapping( "/platformversion", produces = arrayOf("text/plain"))
     private fun platformVersion() = proxy.nodeInfo().platformVersion.toString()
 
-    @GetMapping(value = "/peers", produces = arrayOf("text/plain"))
+    @GetMapping("/peers", produces = arrayOf("text/plain"))
     private fun peers() = proxy.networkMapSnapshot().flatMap { it.legalIdentities }.toString()
 
-    @GetMapping(value = "/notaries", produces = arrayOf("text/plain"))
+    @GetMapping("/notaries", produces = arrayOf("text/plain"))
     private fun notaries() = proxy.notaryIdentities().toString()
 
-    @GetMapping(value = "/flows", produces = arrayOf("text/plain"))
+    @GetMapping( "/flows", produces = arrayOf("text/plain"))
     private fun flows() = proxy.registeredFlows().toString()
 
-    @GetMapping(value = "/states", produces = arrayOf("text/plain"))
+    @GetMapping("/states", produces = arrayOf("text/plain"))
     private fun states() = proxy.vaultQueryBy<ContractState>().states.toString()
 }
