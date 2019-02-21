@@ -1,7 +1,7 @@
 package com.yunxi.flows
 
 import co.paralleluniverse.fibers.Suspendable
-import com.yunxi.contracts.TransactionContract
+import com.yunxi.contracts.GoodsContract
 import com.yunxi.states.Goods
 import net.corda.core.contracts.Command
 import net.corda.core.contracts.requireThat
@@ -17,10 +17,10 @@ open class BuyFlow(val txState: Goods, val counterParty: Party): FlowLogic<Signe
     @Suspendable
     override fun call(): SignedTransaction{
         val notary = serviceHub.networkMapCache.notaryIdentities.first()
-        val buyCommand = Command(TransactionContract.Commands.Buy(), txState.participants.map { it.owningKey })
+        val buyCommand = Command(GoodsContract.Commands.Buy(), txState.participants.map { it.owningKey })
         val newGoodsState = txState.copy((txState.participants - ourIdentity).first())
         val txBuilder = TransactionBuilder(notary = notary)
-                .addOutputState(newGoodsState, TransactionContract.TRANSACTION_CONTRACT_ID!!)
+                .addOutputState(newGoodsState, GoodsContract.TRANSACTION_CONTRACT_ID!!)
                 .addCommand(buyCommand)
         val signedTx = serviceHub.signInitialTransaction(txBuilder)
         val sessions = listOf(initiateFlow(counterParty))

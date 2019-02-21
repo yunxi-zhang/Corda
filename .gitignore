@@ -12,6 +12,9 @@ build/
 **/build/
 **/logs/
 
+### Corda ###
+**/build/
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
