@@ -1,16 +1,14 @@
 package com.yunxi.contracts
 
 import com.yunxi.states.Goods
-import com.yunxi.states.Transaction
 import net.corda.core.contracts.*
-import net.corda.core.contracts.Requirements.using
 import net.corda.core.transactions.LedgerTransaction
 
 class GoodsContract: Contract {
 
     companion object {
         @JvmStatic
-        val TRANSACTION_CONTRACT_ID = TransactionContract::class.qualifiedName
+        val TRANSACTION_CONTRACT_ID = GoodsContract::class.qualifiedName
     }
 
     interface Commands: CommandData {

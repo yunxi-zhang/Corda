@@ -18,7 +18,7 @@ open class BuyFlow(val txState: Goods, val counterParty: Party): FlowLogic<Signe
     override fun call(): SignedTransaction{
         val notary = serviceHub.networkMapCache.notaryIdentities.first()
         val buyCommand = Command(GoodsContract.Commands.Buy(), txState.participants.map { it.owningKey })
-        val newGoodsState = txState.copy((txState.participants - ourIdentity).first())
+        val newGoodsState = txState.copy(counterParty)
         val txBuilder = TransactionBuilder(notary = notary)
                 .addOutputState(newGoodsState, GoodsContract.TRANSACTION_CONTRACT_ID!!)
                 .addCommand(buyCommand)

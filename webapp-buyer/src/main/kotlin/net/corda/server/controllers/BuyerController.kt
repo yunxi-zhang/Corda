@@ -29,11 +29,12 @@ class BuyerController(
     @PostMapping("/buy")
     private fun buy(@RequestBody info: GoodsInfo): ResponseEntity<String> {
         try {
+            val counterParty = proxy.wellKnownPartyFromX500Name(CordaX500Name(info.owner, "London", "GB"))
+                    ?: throw IllegalArgumentException("Unknown party name.")
             val tx = Goods(
-                    owner = proxy.wellKnownPartyFromX500Name(CordaX500Name(info.owner, "London", "GB"))
-                            ?: throw IllegalArgumentException("Unknown party name.")
+                    owner = counterParty
             )
-            val result = proxy.startFlowDynamic(BuyFlow::class.java, tx).returnValue.getOrThrow()
+            val result = proxy.startFlowDynamic(BuyFlow::class.java, tx, counterParty).returnValue.getOrThrow()
             return ResponseEntity.ok(mapper.writeValueAsString(result.coreTransaction.outputs))
         } catch (e: Exception) {
             return ResponseEntity.badRequest().body("error:$e")
