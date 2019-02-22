@@ -1,8 +1,8 @@
+include 'cordapp-common'
+include 'cordapp-contracts-states'
 include 'cordapp-seller'
 include 'cordapp-buyer'
+include 'webapp-common'
 include 'webapp-seller'
 include 'webapp-buyer'
-include 'cordapp-contracts-states'
-include 'webapp-common'
-include 'cordapp-common'
 
