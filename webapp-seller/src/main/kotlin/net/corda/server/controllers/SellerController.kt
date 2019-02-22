@@ -1,6 +1,6 @@
 package net.corda.server.controllers
 
-import com.yunxi.flows.PayFlow1
+import com.yunxi.flows.SellFlow
 import com.yunxi.states.Transaction
 import net.corda.core.identity.CordaX500Name
 import net.corda.core.utilities.getOrThrow
@@ -38,7 +38,7 @@ class SellerController(
                     buyer = proxy.wellKnownPartyFromX500Name(CordaX500Name(info.buyer, "London", "GB"))
                             ?: throw IllegalArgumentException("Unknown party name.")
             )
-            val result = proxy.startFlowDynamic(PayFlow1::class.java, tx).returnValue.getOrThrow()
+            val result = proxy.startFlowDynamic(SellFlow::class.java, tx).returnValue.getOrThrow()
             return ResponseEntity.ok(mapper.writeValueAsString(result.coreTransaction.outputs))
         } catch (e: Exception) {
             return ResponseEntity.badRequest().body("error:$e")
