@@ -33,9 +33,7 @@ class BuyerController(
                     owner = proxy.wellKnownPartyFromX500Name(CordaX500Name(info.owner, "London", "GB"))
                             ?: throw IllegalArgumentException("Unknown party name.")
             )
-            println("1")
             val result = proxy.startFlowDynamic(BuyFlow::class.java, tx).returnValue.getOrThrow()
-            println("2")
             return ResponseEntity.ok(mapper.writeValueAsString(result.coreTransaction.outputs))
         } catch (e: Exception) {
             return ResponseEntity.badRequest().body("error:$e")

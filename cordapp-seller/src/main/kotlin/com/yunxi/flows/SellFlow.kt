@@ -11,8 +11,7 @@ import com.yunxi.states.Transaction
 
 @InitiatingFlow
 @StartableByRPC
-open class PayFlow1(val txState: Transaction): FlowLogic<SignedTransaction>() {
-
+open class SellFlow(val txState: Transaction): FlowLogic<SignedTransaction>() {
 
     @Suspendable
     override fun call(): SignedTransaction{
@@ -32,7 +31,7 @@ open class PayFlow1(val txState: Transaction): FlowLogic<SignedTransaction>() {
     }
 }
 
-@InitiatedBy(PayFlow1::class)
+@InitiatedBy(SellFlow::class)
 class PayFlowResponder1(val responderFlowSession: FlowSession): FlowLogic<Unit>() {
 
     @Suspendable
