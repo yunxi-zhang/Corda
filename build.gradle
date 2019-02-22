@@ -36,6 +36,7 @@ apply plugin: 'net.corda.plugins.quasar-utils'
 apply from:   'commons.gradle'
 
 dependencies {
+    cordapp project(":cordapp-buyer")
     cordapp project(":cordapp-seller")
     cordapp project(":cordapp-contracts-states")
 }
